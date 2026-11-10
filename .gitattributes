@@ -1,0 +1,15 @@
+# Store everything with LF in the repo; check out as-is (no CRLF churn).
+* text=auto eol=lf
+
+# Windows batch launchers MUST be CRLF — cmd.exe mis-parses LF-only .bat files:
+# an LF-only file breaks `call ... || (pause & exit /b 1)` with
+# "|| was unexpected at this time". tests/test_launchers.py guards this.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary — never normalise
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.zip binary

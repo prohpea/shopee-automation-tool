@@ -1,0 +1,17 @@
+# Core Automation
+playwright>=1.40.0
+adbutils>=2.0.0
+Pillow>=10.0.0
+
+# Data & Configuration
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# CLI & Formatting
+rich>=13.0.0
+click>=8.1.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+

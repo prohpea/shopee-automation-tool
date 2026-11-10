@@ -1,0 +1,51 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+env/
+venv/
+test_venv/
+ENV/
+
+# Pytest tmp dirs (pytest-of-<user> is created in the project root on Windows)
+pytest-of-*/
+
+# Project Data & Credentials
+.env
+data/sessions/*.json
+!data/sessions/.gitkeep
+data/profiles/
+data/exports/*
+!data/exports/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Graphify build cache + dated snapshots (regenerable; graph.json / GRAPH_REPORT.md / graph.html stay tracked)
+graphify-out/cache/
+graphify-out/*/
+graphify-out/.graphify_build.json
+graphify-out/.graphify_analysis.json
+# Records the absolute path of the machine that built the graph
+graphify-out/.graphify_root
+
+# Internal agent workflow notes (Planner/Coder/Tester/Reviewer hand-off docs)
+.bangiao/
+
+# Vendored third-party agent skill — regenerate with:
+#   graphify install --project --platform agents
+.agents/skills/graphify/
+
+# IDEs & System
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
